@@ -103,6 +103,12 @@ button:hover{
     }    
 }
 
+header.sticky{
+    background: var(--background);
+    box-shadow: 0 .1rem 1rem rgba( 0, 0, 0, .2);
+    padding: 16px 16%;
+}
+
 /* navigation area end  */
 
 /* text animation  */
@@ -173,19 +179,24 @@ section .first-text{
     }
 }
 
+/* image sizing */
+
+.image-sizing{
+    max-width: 350px;
+}
+
 /* image box */
 
 
 .image{
     align-items: end;
-    max-width: 350px;
     box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
     animation: animation 5s ease-in-out infinite;
     transition: all ls ease-in-out;
 
 }
 .floating{
-    animation: floating 4s ease-in-out infinite;
+    animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
@@ -193,7 +204,7 @@ section .first-text{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(5px);
+        transform: translateY(7px);
     }
     100%{
         transform: translateY(0);

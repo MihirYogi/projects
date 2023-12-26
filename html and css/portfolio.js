@@ -1,3 +1,6 @@
+
+// text animation 
+
 const text = document.querySelector(".second-text");
         
             const textLoad = () =>  {
@@ -10,3 +13,6 @@ const text = document.querySelector(".second-text");
             }
             textLoad();
             setInterval(textLoad, 8000);
+
+
+// navigation sticky scrolling
