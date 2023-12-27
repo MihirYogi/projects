@@ -79,6 +79,12 @@ button:hover{
     background-color: var(--btn);
 }
 
+@media (max-width: 868px){
+    .nav_links{
+        display: none;
+    }
+}
+
 /* KEY FRAMES ANIMATION */
 
 @keyframes slideRight {
@@ -136,6 +142,8 @@ section .text{
     margin-bottom: 2px;
     display: inline-block;
 }
+
+
 .animation {
     text-align: left ;
     padding-left: 20px; 
@@ -143,6 +151,7 @@ section .text{
     flex-direction: column; 
     align-items: flex-start; 
     width: 50vh;
+    
 }
 section .second-text{
     margin-bottom: 7px;
@@ -242,3 +251,18 @@ section .first-text{
     color: var(--orange);
     box-shadow: 0 0 20px var(--orange);
 }
+
+
+/* about section */
+
+.text-2{
+    color: var(--orange);
+    font-family: 'Anybody', sans-serif;
+}
+
+h2,
+p{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--white);
+}
+
