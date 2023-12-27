@@ -30,11 +30,25 @@ li, a, button {
 }
 
 header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     height: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    overflow: hidden;
+    background: transparent;
+    transition: all .50s ease;
+}
+
+header.sticky{
+    background: var(--background);
+    box-shadow: 0 .2rem 1rem rgba( 0, 0, 0, .2);    
+    padding: 35px 10%;
 }
 
 .logo{
@@ -44,7 +58,7 @@ header{
     margin-right: auto;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    
+
 }
 
 .nav_links{
@@ -79,11 +93,9 @@ button:hover{
     background-color: var(--btn);
 }
 
-@media (max-width: 868px){
-    .nav_links{
-        display: none;
-    }
-}
+/* responsive navbar */
+
+/* responsive navbar end */
 
 /* KEY FRAMES ANIMATION */
 
@@ -107,12 +119,6 @@ button:hover{
         transform: translateY(0);
         opacity: 1;
     }    
-}
-
-header.sticky{
-    background: var(--background);
-    box-shadow: 0 .1rem 1rem rgba( 0, 0, 0, .2);
-    padding: 16px 16%;
 }
 
 /* navigation area end  */
@@ -266,3 +272,19 @@ p{
     color: var(--white);
 }
 
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-img img{
+    width: 100%;
+    height: 530px;
+    max-width: 530px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid var(--background);
+    box-shadow: -30px 25px 30px #131417;
+}
