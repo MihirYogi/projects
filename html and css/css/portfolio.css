@@ -265,6 +265,7 @@ section .first-text{
 
     font-family: 'Anybody', sans-serif;
     margin-bottom: 20px;
+    color: var(--orange);
 }
 
 h2,
@@ -316,12 +317,12 @@ p{
 }
 
 .animate{
-    transform: translateX(100%);
     transition: 3s;
+    opacity: 0; 
 }
 .about-text.show-animate .animate{
-    transform: translateX(0);
-    animation: slideLeft .4s ease forwards;
+
+    animation: text-vis .4s ease forwards;
     animation-delay: calc(.2s * var(--j));
 }
 
@@ -339,14 +340,11 @@ p{
     transition: none;
 }
 
-.text-ani{
-    transform: translateY(90%); 
-    transition: 2s;
-    color: var(--background);
-}
-
-.about-text.show-animate .text-ani{
-    transform: translate(0);
-    animation: slideTop .7s ease forwards; 
-    color: var(--orange);
+@keyframes text-vis{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
