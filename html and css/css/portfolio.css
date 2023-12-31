@@ -348,3 +348,21 @@ p{
         opacity: 100%;
     }
 }
+
+
+/* skill card */
+
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiltcard{
+    width: 200px;
+    height: 275px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}

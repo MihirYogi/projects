@@ -41,4 +41,6 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
+//erase 
+
 
