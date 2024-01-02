@@ -9,7 +9,7 @@ const text = document.querySelector(".second-text");
                     }, 0);
                     setTimeout(() => {
                         text.textContent = "Web Developer";
-                    }, 4300);
+                    }, 4000);
             }
             textLoad();
             setInterval(textLoad, 8000);
@@ -41,6 +41,5 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-//erase 
 
 
